@@ -70,7 +70,6 @@ const juanDesdeInstancia = new Student({
   facebook: "Juan Vidal",
 });
 
-
 // clase de rutas de aprendizaje
 class LearningPaths{
 

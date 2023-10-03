@@ -20,27 +20,12 @@ class Student{
     }
   }
 
-  // retornar todos los estudiantes
-  async getStudents(){
+}
 
-    try {
-      const [data] = await connection.promise.query("SELECT * FROM students");
-      return data;
-      
-    } catch (error) {
-      console.log(`Error al traer la data de la DB: ${error}`);
-      return [];
-    }
+// heredando los atributos de la clase padre
+
+class FreeStudent extends Student{
+  constructor(props){
+    super(props); // constructor de nuestra clase madre
   }
-
-  // solo un estudiante
-  async getStudentById(id){
-
-  }
-
-  // añadir un estudiante
-  async addStuddent(){
-
-  }
-
 }
